@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindForms from "@tailwindcss/forms";
 
 const config: Config = {
   content: [
@@ -10,10 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindForms],
 };
 export default config;

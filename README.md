@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aprova Fácil
 
-## Getting Started
+Este projeto é uma aplicação web **responsiva** desenvolvida para realizar o cadastro de usuários e análise de perfil para aprovação de crédito. A aplicação foi construída utilizando **Next.js** para o frontend e **Express** no backend. O sistema realiza a coleta de dados dos usuários, processa informações e, com base em critérios de análise, avalia se o perfil do usuário é elegível para aprovação de crédito.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Frontend
+- **Next.js 14**
+- **React**
+- **Tailwind CSS**
+  
+### Backend
+- **Express**
+- **Node.js**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Cadastro de Usuário**: Permite que novos usuários se registrem no sistema fornecendo as seguintes informações: nome, idade, cidade e renda mensal.
+- **Login**: Autenticação segura usando JWT.
+- **Análise de Perfil**: Avalia os dados de crédito e renda do usuário para determinar a elegibilidade para aprovação de crédito.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalação
 
-## Learn More
+### Pré-requisitos
+- **Node.js** (v20+)
 
-To learn more about Next.js, take a look at the following resources:
+### Passos para executar o projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Dentro da pasta, instale as dependências:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Execute a aplicação em modo `dev`:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+  Ou se quiser rodar a aplicação em uma versão pronta `prod`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```bash
+  npm run build
+  npm run start
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Acesse a aplicação no navegador:
+    ```
+    http://localhost:3000
+    ```
+
+4. Para rodar os testes, execute:
+    ```
+    npm run test
+    ```

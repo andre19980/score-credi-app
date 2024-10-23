@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders component 1`] = `
+<div>
+  <nav
+    aria-label="Navbar"
+    class="bg-gray-50 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 h-20 flex"
+    role="navigation"
+  >
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center p-4"
+    >
+      <img
+        alt="Blipay logo"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="42"
+        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+        style="color: transparent;"
+        width="140"
+      />
+    </div>
+  </nav>
+</div>
+`;
