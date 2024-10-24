@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useContext } from "react";
 
 import Approved from "@/public/approved.png";
 import Denied from "@/public/denied.png";
+
+import { UserContext, UserContextType } from "@/app/page";
 
 const valueFormatter = new Intl.NumberFormat("pt-BR", {
   style: "currency",
@@ -9,7 +12,12 @@ const valueFormatter = new Intl.NumberFormat("pt-BR", {
   maximumSignificantDigits: 1,
 });
 
-export default function Status({ status }: { status: string }) {
+export default function Status() {
+  const context = useContext(UserContext);
+  const status = context?.user;
+
+  if (!status) return;
+
   const [approved, amount] = status.split(";");
   const isApproved = approved === "true";
   const img = isApproved ? Approved : Denied;

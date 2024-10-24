@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { StepFormContext } from "../step-form";
+import { StepFormContext } from "../form";
 
 export default function AddressStep() {
   const context = useContext(StepFormContext);
@@ -13,7 +13,7 @@ export default function AddressStep() {
       <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6 mt-4">
         <div className="sm:col-span-6">
           <label
-            htmlFor="name"
+            htmlFor="city"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
             Cidade

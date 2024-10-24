@@ -1,11 +1,26 @@
 import { useContext } from "react";
 
-import { StepFormContext, FORM_STEPS } from "./step-form";
+import { FORM_STEPS } from "./step-form";
+import { StepFormContext } from "./form";
+import { FormType } from "./types";
 
 export default function Actions() {
   const context = useContext(StepFormContext);
-  const isLastStep = context?.currentStep === FORM_STEPS.length - 1;
-  const isFirstStep = context?.currentStep === 0;
+  const currentStep = context?.currentStep
+
+  if (currentStep === undefined) return;
+
+  const isLastStep =  currentStep === FORM_STEPS.length - 1;
+  const isFirstStep = currentStep === 0;
+
+  const handleClick = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    type FieldName = keyof FormType;
+
+    const fields = FORM_STEPS[currentStep].fields;
+    const output = await context?.trigger(fields as FieldName[], { shouldFocus: true });
+  
+    context?.handleNextStep(e, !!output);
+  }
 
   return (
     <div className="flex justify-between pt-4 mt-8 border-t">
@@ -29,7 +44,7 @@ export default function Actions() {
         <button
           type="button"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-          onClick={context?.handleNextStep}
+          onClick={handleClick}
         >
           Próximo
         </button>

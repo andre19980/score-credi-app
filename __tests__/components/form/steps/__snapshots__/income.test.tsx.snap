@@ -16,7 +16,7 @@ exports[`Income Step renders form 1`] = `
       >
         <label
           class="block text-sm font-medium leading-6 text-gray-900"
-          for="name"
+          for="income"
         >
           Qual é sua renda mensal?
         </label>

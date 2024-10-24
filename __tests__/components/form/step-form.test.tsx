@@ -5,7 +5,7 @@ import StepForm from "@/components/form/step-form";
 
 describe("StepForm component", () => {
   it("renders form", () => {
-    const { container } = render(<StepForm setUser={jest.fn()} />);
+    const { container } = render(<StepForm />);
     expect(container).toMatchSnapshot();
   });
 });

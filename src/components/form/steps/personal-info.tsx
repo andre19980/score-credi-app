@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { StepFormContext } from "../step-form";
+import { StepFormContext } from "../form";
 
 export default function PersonalInfoStep() {
   const context = useContext(StepFormContext);

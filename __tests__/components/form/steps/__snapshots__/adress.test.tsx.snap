@@ -16,7 +16,7 @@ exports[`Adress Step renders form 1`] = `
       >
         <label
           class="block text-sm font-medium leading-6 text-gray-900"
-          for="name"
+          for="city"
         >
           Cidade
         </label>

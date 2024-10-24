@@ -16,7 +16,7 @@ export const FormDataSchema = z.object({
     .lte(65, "A idade deve ser menor ou igual a 65 anos."),
   city: z
     .string()
-    .min(1, "A cidade não pode ser vazia.")
+    .min(1, "O nome cidade não pode ser vazio.")
     .refine((val) => /^[^0-9]*$/.test(val), {
       message: "O nome da cidade não pode conter números.",
     }),
