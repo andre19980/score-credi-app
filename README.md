@@ -48,7 +48,17 @@ Este projeto é uma aplicação web **responsiva** desenvolvida para realizar o 
     http://localhost:3000
     ```
 
-4. Para rodar os testes, execute:
+4. Para rodar os testes unitários, execute:
     ```
     npm run test
+    ```
+
+5. Para rodar os teste e2e, garanta que a aplicação esteja rodando no `localhost:3000` e então execute:
+    ```bash
+    npm run test:e2e
+    ```
+
+    Se quiser checar os reports, rode:
+    ```bash
+    npm run test:e2e:report
     ```
