@@ -1,14 +1,13 @@
 import { useContext } from "react";
 
 import { FORM_STEPS } from "./step-form";
-import { StepFormContext } from "./form";
-import { FormType } from "./types";
+import { StepFormContext, FormType } from "@/contexts/form";
 
 export default function Actions() {
   const context = useContext(StepFormContext);
   const currentStep = context?.currentStep
 
-  if (currentStep === undefined) return;
+  if (currentStep === undefined) return null;
 
   const isLastStep =  currentStep === FORM_STEPS.length - 1;
   const isFirstStep = currentStep === 0;
@@ -26,7 +25,7 @@ export default function Actions() {
     <div className="flex justify-between pt-4 mt-8 border-t">
       <button
         type="button"
-        className={`${isFirstStep ? "text-gray-600 bg-gray-100" : "text-gray-900 bg-white"} py-2.5 px-5 text-sm font-medium focus:outline-none rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700`}
+        className={`${isFirstStep ? "text-gray-600 bg-gray-100 hover:text-gray-600" : "text-gray-900 bg-white hover:text-blue-700"} py-2.5 px-5 text-sm font-medium focus:outline-none rounded-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700`}
         onClick={context?.handlePrevStep}
         disabled={isFirstStep}
       >

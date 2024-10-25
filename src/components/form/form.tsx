@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { useContext } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 
@@ -6,12 +6,10 @@ import Actions from "./actions";
 import { FORM_STEPS } from "./step-form";
 
 import { FormDataSchema } from "@/lib/schema";
-import { UserContext } from "@/app/page";
-import { StepFormContextType, FormType } from "./types";
+import { UserContext } from "@/contexts/user";
+import { StepFormContext, StepFormContextType, FormType } from "@/contexts/form";
 
-export const StepFormContext = createContext<StepFormContextType | null>(null);
-
-export interface FormComponentPropsType extends Pick<StepFormContextType, "currentStep" | "updateStep" | "handleNextStep" | "handlePrevStep"> {}
+type FormComponentPropsType = Pick<StepFormContextType, "currentStep" | "updateStep" | "handleNextStep" | "handlePrevStep">
 
 export default function Form({
   currentStep,

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { createContext } from "react";
 import {
   type UseFormHandleSubmit,
   type UseFormRegister,
@@ -24,3 +25,5 @@ export interface StepFormContextType {
   reset: UseFormReset<FormType>;
   errors: FieldErrors<FormType>;
 }
+
+export const StepFormContext = createContext<StepFormContextType | null>(null);

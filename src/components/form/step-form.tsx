@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { SubmitHandler } from "react-hook-form";
 
 import ProgressLine from "./step-progress";
 import Form from "./form";
 import PersonalInfoStep from "./steps/personal-info";
 import AddressStep from "./steps/address";
 import IncomeStep from "./steps/income";
-
-import { FormType } from "./types";
 
 export enum STEPS {
   PERSONAL = 0,
