@@ -35,13 +35,11 @@ Este projeto é uma aplicação web **responsiva** desenvolvida para realizar o 
     ```bash
     npm run dev
     ```
-
-  Ou se quiser rodar a aplicação em uma versão pronta `prod`:
-
-  ```bash
-  npm run build
-  npm run start
-  ```
+    Ou se quiser rodar a aplicação em uma versão pronta `prod`:
+   ```bash
+   npm run build
+   npm run start
+   ```
 
 3. Acesse a aplicação no navegador:
     ```
