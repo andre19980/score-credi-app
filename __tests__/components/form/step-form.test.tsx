@@ -1,6 +1,5 @@
 import "@testing-library/jest-dom";
-import { render, screen, fireEvent } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { render } from "@testing-library/react";
 import StepForm from "@/components/form/step-form";
 
 describe("StepForm component", () => {

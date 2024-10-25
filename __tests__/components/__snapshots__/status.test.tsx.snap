@@ -8,17 +8,21 @@ exports[`Status approved case 1`] = `
     <div
       class="flex flex-col bg-gray-50 p-8 items-center gap-y-6 rounded"
     >
-      <img
-        alt="status image"
-        data-nimg="1"
-        decoding="async"
-        height="180"
-        loading="lazy"
-        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-        style="color: transparent;"
-        width="180"
-      />
+      <div
+        style="will-change: transform,opacity;"
+      >
+        <img
+          alt="status image"
+          data-nimg="1"
+          decoding="async"
+          height="180"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+          style="color: transparent;"
+          width="180"
+        />
+      </div>
       <p
         class="text-gray-900 sm:text-sm sm:leading-6"
       >
@@ -37,17 +41,21 @@ exports[`Status denied case 1`] = `
     <div
       class="flex flex-col bg-gray-50 p-8 items-center gap-y-6 rounded"
     >
-      <img
-        alt="status image"
-        data-nimg="1"
-        decoding="async"
-        height="180"
-        loading="lazy"
-        src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
-        srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-        style="color: transparent;"
-        width="180"
-      />
+      <div
+        style="will-change: transform,opacity;"
+      >
+        <img
+          alt="status image"
+          data-nimg="1"
+          decoding="async"
+          height="180"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+          style="color: transparent;"
+          width="180"
+        />
+      </div>
       <p
         class="text-gray-900 sm:text-sm sm:leading-6"
       >

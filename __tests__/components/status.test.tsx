@@ -2,7 +2,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
 import Status from "@/components/status";
-import { UserContext, UserContextType } from "@/app/page";
+import { UserContext, UserContextType } from "@/contexts/user";
 
 const customRender = (ui: JSX.Element, { providerProps, ...renderOptions }: { providerProps: UserContextType }) => {
   return render(

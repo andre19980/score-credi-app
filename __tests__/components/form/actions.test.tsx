@@ -2,8 +2,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
 import Actions from "@/components/form/actions";
-import { StepFormContext } from "@/components/form/form";
-import { StepFormContextType } from "@/components/form/types";
+import { StepFormContext, StepFormContextType } from "@/contexts/form";
 
 const customRender = (ui: JSX.Element, { providerProps, ...renderOptions }: { providerProps: StepFormContextType }) => {
   return render(
