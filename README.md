@@ -1,8 +1,8 @@
 # Aprova Fácil
 
-Este projeto é uma aplicação web **responsiva** desenvolvida para realizar o cadastro de usuários e análise de perfil para aprovação de crédito. A aplicação foi construída utilizando **Next.js** para o frontend e **Express** no backend. O sistema realiza a coleta de dados dos usuários, processa informações e, com base em critérios de análise, avalia se o perfil do usuário é elegível para aprovação de crédito.
+This project is a **responsive** web application designed to register users and analyze their profiles for credit approval. The application was built using **Next.js** for the frontend and **Express** for the backend. The system collects user data, processes information and, based on analysis criteria, assesses whether the user's profile is eligible for credit approval.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 ### Frontend
 - **Next.js 14**
@@ -10,53 +10,53 @@ Este projeto é uma aplicação web **responsiva** desenvolvida para realizar o 
 - **Tailwind CSS**
   
 ### Backend
-- **Express**
+- **Express** **Node.js
 - **Node.js**
 
-## Funcionalidades
+## Features
 
-- **Cadastro de Usuário**: Permite que novos usuários se registrem no sistema fornecendo as seguintes informações: nome, idade, cidade e renda mensal.
-- **Login**: Autenticação segura usando JWT.
-- **Análise de Perfil**: Avalia os dados de crédito e renda do usuário para determinar a elegibilidade para aprovação de crédito.
+- User Registration: Allows new users to register in the system by providing the following information: name, age, city and monthly income.
+- **Login**: Secure authentication using JWT.
+- Profile Analysis**: Evaluates the user's credit and income data to determine eligibility for credit approval.
 
-## Instalação
+## Installation
 
-### Pré-requisitos
+### Prerequisites
 - **Node.js** (v20+)
 
-### Passos para executar o projeto
+### Steps to run the project
 
-1. Dentro da pasta, instale as dependências:
+1. Inside the folder, install the dependencies:
     ```bash
     npm install
     ```
 
-2. Execute a aplicação em modo `dev`:
+2. Run the application in `dev` mode:
     ```bash
     npm run dev
     ```
-    Ou se quiser rodar a aplicação em uma versão pronta `prod`:
+    Or if you want to run the application in a `prod` ready version:
    ```bash
    npm run build
    npm run start
    ```
 
-3. Acesse a aplicação no navegador:
+3. Access the application in the browser:
     ```
     http://localhost:3000
     ```
 
-4. Para rodar os testes unitários, execute:
+4. To run the unit tests, execute:
     ```
     npm run test
     ```
 
-5. Para rodar os teste e2e, garanta que a aplicação esteja rodando no `localhost:3000` e então execute:
+5. To run the e2e tests, make sure the application is running on `localhost:3000` and then run:
     ```bash
     npm run test:e2e
     ```
 
-    Se quiser checar os reports, rode:
+    If you want to check the reports, run:
     ```bash
     npm run test:e2e:report
     ```
